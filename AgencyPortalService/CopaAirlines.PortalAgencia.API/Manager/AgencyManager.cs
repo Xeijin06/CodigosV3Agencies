@@ -37,10 +37,13 @@ namespace Portaldeagencias.Manager
         {
             try
             {
-                if (string.IsNullOrEmpty(agencyRQ.UserEmail))
-                    return "Request invalido. El campo Correo Electrónico debe contener un valor.";
-                else if (agencyRQ.UserEmail.Length > 100)
-                    return "Request invalido. El campo Correo Electrónico excedió la cantidad de caracteres permitido.";
+                var db = new ModelDB_PortalAgencia();
+                var agency = db.Agencies.FirstOrDefault(fod => fod.User == agencyRQ.User);
+                if (agency == null)
+                    return "Request invalido. El registro no existe";
+
+                if (string.IsNullOrEmpty(agency.Email))
+                    return "Request invalido. No existe correo registrado.";
 
                 //if (string.IsNullOrEmpty(agencyRQ.PIN))
                 //    return "Request invalido. El campo PIN debe contener un valor.";

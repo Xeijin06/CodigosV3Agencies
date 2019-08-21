@@ -93,7 +93,7 @@ namespace Portaldeagencias.Controllers
                     if (ValidacionAgencia.Message.StartsWith("Información de credenciales inválido"))
                     {
                         int maxAttempts = Convert.ToInt32(ConfigurationManager.AppSettings["MaxLoginAttempts"]);
-                        this._agentRequest.UpdateFailAttempt(_attemptID, maxAttempts, agenciaVM.UserEmail);
+                        this._agentRequest.UpdateFailAttempt(_attemptID, maxAttempts, agenciaVM.User);
                         return Request.CreateResponse(HttpStatusCode.Unauthorized, ValidacionAgencia);
                     }
                     else
