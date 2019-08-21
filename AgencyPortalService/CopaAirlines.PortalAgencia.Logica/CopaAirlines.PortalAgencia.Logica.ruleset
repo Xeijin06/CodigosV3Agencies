@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SonarQube - portalagencias-test1-2adadf Sonar way" ToolsVersion="15.0">
+  <Include Path="..\.sonarlint\portalagencias-test1-2adadfcsharp.ruleset" Action="Default" />
+</RuleSet>

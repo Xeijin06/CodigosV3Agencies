@@ -1,0 +1,118 @@
+﻿@model ViewModel.NameCorrectionViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="panel panel-primary col-sm-8 col-sm-offset-2" style="margin-top: 40px; padding: 0px;">
+            <div class="panel-heading panel-heading-options" style="margin-top: 0px;">
+                <!--button class="btn btn-back">
+                  <span class="glyphicon glyphicon-arrow-left"></span> Catálogos
+                </button-->
+            </div>
+            <div class="panel-body panel-body-custom">
+                <h3 class="title-table">Registrar corrección de nombre</h3>
+
+                <span style="padding: 8px 8px 25px; display: block;">Formulario de corrección de nombres. Es importante que se adjunte un documento del pasajero (preferiblemente un pasaporte, con validéz mínima de 6 meses), y que se cumpla con los requisitos de la política de Copa Airlines para corrección de nombres.</span>
+                <div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <form id="form-correction" enctype="multipart/form-data">
+
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                <fieldset>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">Teléfono de Contacto(*)</h4>
+                                        <div class="col-xs-8">
+                                            @Html.TextBoxFor(m => m.ContactPhoneNumber, new { @class = "form-control col-xs-12 ", @placeholder = "Teléfono de Contacto", required = "required" })
+                                            @Html.ValidationMessageFor(m => m.ContactPhoneNumber, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">PNR(*)</h4>
+                                        <div class="col-xs-8">
+                                            @Html.TextBoxFor(m => m.PNR, new { @class = "form-control col-xs-12 ", @placeholder = "PNR", required = "required" })
+                                            @Html.ValidationMessageFor(m => m.PNR, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">País(*)</h4>
+                                        <div class="col-xs-8">
+                                            @Html.DropDownListFor(m => m.CountryCode, new SelectList(ViewBag.Paises, "Iniciales", "Nombre"), new { @class = "form-control col-xs-12 ", @placeholder = "País", required = "required" })
+                                            @Html.ValidationMessageFor(m => m.CountryCode, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">Idioma(*)</h4>
+                                        <div class="col-xs-8">
+                                            @Html.DropDownListFor(m => m.ServiceLanguage, new SelectList(ViewBag.Lenguages, "Iniciales", "Nombre"), new { @class = "form-control col-xs-12 ", @placeholder = "Idioma&", required = "required" })
+                                            @Html.ValidationMessageFor(m => m.ServiceLanguage, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">Imagen de pasaporte:</h4>
+                                        <div class="col-xs-8">
+                                            <label class="btn btn-primary btn-lg">
+                                                ADJUNTAR
+                                                <input type="file" accept="image/*" name="file" id="fileAttachment" class="ignore" style="float: left;" size="60" />
+                                            </label>
+                                            <span class="hidden filehiddenroute"></span>
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <div class="input-group col-xs-12">
+                                        <h4 class="col-xs-4">Descripción de la corrección(*)</h4>
+                                        <div class="col-xs-8">
+                                            @Html.TextAreaFor(m => m.Description, new { @class = "form-control col-xs-12 ", @placeholder = "Descripción", Style = "min-height: 140px; resize: none;", required = "required" })
+                                            @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    </br>
+
+                                    <span style="padding: 8px 0px; display: block; text-align: right; color: red;">
+                                        *El tiempo de respuesta aproximado es de 24 horas.
+                                        </br>
+                                        *El costo para la corrección de nombre es de $50 USD más impuestos.
+                                    </span>
+
+
+
+                                    </br>
+                                    <div class="input-group col-xs-12">
+                                        <button id="btnregister" class="btn btn-primary btn-lg" style="margin: 20px 15px; float: right;">ENVIAR</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
