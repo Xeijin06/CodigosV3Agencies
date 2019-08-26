@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopaAirlines.RequestsService.Common\CopaAirlines.RequestsService.Common.csproj" />
+    <ProjectReference Include="..\CopaAirlines.RequestsService.DA\CopaAirlines.RequestsService.DA.csproj" />
+    <ProjectReference Include="..\CopaAirlines.RequestsService.Interface\CopaAirlines.RequestsService.Interface.csproj" />
+    <ProjectReference Include="..\CopaAirlines.RequestsService.ViewModel\CopaAirlines.RequestsService.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

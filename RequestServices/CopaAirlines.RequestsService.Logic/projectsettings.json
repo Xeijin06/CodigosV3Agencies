@@ -1,0 +1,8 @@
+{
+  "NameCorrectionEmailData": {
+    "EmailTo": "t-lugonzalezr@copaair.com; t-emora@copaair.com; vsalvarado@copaair.com",
+    "EmailFrom": "vsalvarado@copaair.com",
+    "SMTPServer": "mail.copaair.com",
+    "EmailSubject":  "Portal de Agencias - Corrección de Nombre - Registro de Solicitud - ID Caso {0} - Idioma {1}"
+  }
+}

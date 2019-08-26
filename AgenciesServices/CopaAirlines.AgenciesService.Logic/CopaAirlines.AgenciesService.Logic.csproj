@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.Common\CopaAirlines.AgenciesService.Common.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.DA\CopaAirlines.AgenciesService.DA.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.Interface\CopaAirlines.AgenciesService.Interface.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.ViewModel\CopaAirlines.AgenciesService.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

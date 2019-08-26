@@ -1,0 +1,10 @@
+﻿Se registró una nueva solicitud de corrección de Nombre con la siguiente información:
+
+ID Caso: {caseID}
+Agencia: {agencyName}
+Código IATA: {iATACode}
+Teléfono Contacto Agencia: {agencyPhoneNumber}
+Email de Contacto Agencia: {agencyEmail}
+País Seleccionado: {country}
+Idioma de Atención: {language}
+Descripción de Corrección: {description}

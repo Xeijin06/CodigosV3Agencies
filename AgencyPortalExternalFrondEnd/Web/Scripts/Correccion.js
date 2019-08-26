@@ -60,8 +60,8 @@ APP.correccion = {
         APP.common.mostrarBackloading();
 
         $.ajax({
-            url: 'https://hdq-it-01/agencyportalexternalfrontend/Correction/SendRequest',
-            //url: 'http://localhost:56107/Correction/SendRequest',
+            //url: 'https://hdq-it-01/agencyportalexternalfrontend/Correction/SendRequest',
+            url: APP.common.webServer + 'Correction/SendRequest',
             type: 'POST',
             data: formData,
             contentType: false,

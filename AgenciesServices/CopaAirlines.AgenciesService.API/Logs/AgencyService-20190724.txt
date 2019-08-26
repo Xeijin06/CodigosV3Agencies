@@ -1,0 +1,73 @@
+2019-07-24T14:35:40.7604486-05:00  [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DbContextAgenciesServices"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:35:41.0061917-05:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2019-07-24T14:35:41.0157845-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2019-07-24T14:35:41.0274366-05:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2019-07-24T14:35:41.0405731-05:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2019-07-24T14:35:41.6220171-05:00 0HLOGDOEFM8U7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44397/api/values   (ca22a1cb)
+2019-07-24T14:35:41.6220170-05:00 0HLOGDOEFM8U8:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:63332/  0 (ca22a1cb)
+2019-07-24T14:35:41.6923117-05:00 0HLOGDOEFM8U8:00000001 [INF] Request finished in 61.5854ms 200  (791a596a)
+2019-07-24T14:35:41.9558425-05:00 0HLOGDOEFM8U7:00000001 [INF] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "CopaAirlines.AgenciesService.API.Controllers.ValuesController.Get (CopaAirlines.AgenciesService.API)" (a44c0341)
+2019-07-24T14:35:41.9714947-05:00 0HLOGDOEFM8U7:00000001 [INF] Executing action method "CopaAirlines.AgenciesService.API.Controllers.ValuesController.Get (CopaAirlines.AgenciesService.API)" - Validation state: Valid (dad538d7)
+2019-07-24T14:35:41.9811724-05:00 0HLOGDOEFM8U7:00000001 [INF] Executed action method "CopaAirlines.AgenciesService.API.Controllers.ValuesController.Get (CopaAirlines.AgenciesService.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.3233ms. (50a9e262)
+2019-07-24T14:35:41.9953373-05:00 0HLOGDOEFM8U7:00000001 [INF] Executing ObjectResult, writing value of type '"System.String[]"'. (8a1b66c8)
+2019-07-24T14:35:42.0736501-05:00 0HLOGDOEFM8U7:00000001 [INF] Executed action "CopaAirlines.AgenciesService.API.Controllers.ValuesController.Get (CopaAirlines.AgenciesService.API)" in 104.8512ms (afa2e885)
+2019-07-24T14:35:42.0949295-05:00 0HLOGDOEFM8U7:00000001 [INF] Request finished in 478.2793ms 200 application/json; charset=utf-8 (791a596a)
+2019-07-24T14:35:42.1191279-05:00 0HLOGDOEFM8U8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44397/favicon.ico   (ca22a1cb)
+2019-07-24T14:35:42.1267344-05:00 0HLOGDOEFM8U8:00000002 [INF] Request finished in 10.0874ms 404  (791a596a)
+2019-07-24T14:38:30.2756459-05:00 0HLOGDOEFM8U9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44397/Agencies/GetAgencyFromUserEmail?email=lugonzalezr@copaair.com   (ca22a1cb)
+2019-07-24T14:38:30.2980302-05:00 0HLOGDOEFM8U9:00000001 [INF] Route matched with "{action = \"GetAgencyFromEmail\", controller = \"Agencies\"}". Executing action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" (a44c0341)
+2019-07-24T14:38:30.3274761-05:00 0HLOGDOEFM8U9:00000001 [INF] Executing action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" with arguments (["lugonzalezr@copaair.com"]) - Validation state: Valid (4e3479ed)
+2019-07-24T14:38:30.3846839-05:00 0HLOGDOEFM8U9:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DbContextAgenciesServices"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:38:30.5466053-05:00 0HLOGDOEFM8U9:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__email_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [ag].[UserID], [ag].[AgencyID], [ag].[CreationDate], [ag].[Email], [ag].[Password], [ag.Agency].[AgencyID], [ag.Agency].[CreationDate], [ag.Agency].[Email], [ag.Agency].[IATACode], [ag.Agency].[Name], [ag.Agency].[PhoneNumber]
+FROM [AgencyUsers] AS [ag]
+INNER JOIN [Agencies] AS [ag.Agency] ON [ag].[AgencyID] = [ag.Agency].[AgencyID]
+WHERE [ag].[Email] = @__email_0" (0723d8ff)
+2019-07-24T14:38:30.6134729-05:00 0HLOGDOEFM8U9:00000001 [INF] Executed action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 280.5813ms. (50a9e262)
+2019-07-24T14:38:30.6201834-05:00 0HLOGDOEFM8U9:00000001 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.AgenciesService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:38:30.6399960-05:00 0HLOGDOEFM8U9:00000001 [INF] Executed action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" in 336.0841ms (afa2e885)
+2019-07-24T14:38:30.6523325-05:00 0HLOGDOEFM8U9:00000001 [INF] Request finished in 369.0196ms 200 application/json; charset=utf-8 (791a596a)
+2019-07-24T14:38:31.2803856-05:00 0HLOGDOEFM8U9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44397/Agencies/GetAgencyFromUserEmail?email=lugonzalezr@copaair.com   (ca22a1cb)
+2019-07-24T14:38:31.2860077-05:00 0HLOGDOEFM8U9:00000002 [INF] Route matched with "{action = \"GetAgencyFromEmail\", controller = \"Agencies\"}". Executing action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" (a44c0341)
+2019-07-24T14:38:31.2961348-05:00 0HLOGDOEFM8U9:00000002 [INF] Executing action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" with arguments (["lugonzalezr@copaair.com"]) - Validation state: Valid (4e3479ed)
+2019-07-24T14:38:31.3083546-05:00 0HLOGDOEFM8U9:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DbContextAgenciesServices"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:38:31.3196349-05:00 0HLOGDOEFM8U9:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__email_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [ag].[UserID], [ag].[AgencyID], [ag].[CreationDate], [ag].[Email], [ag].[Password], [ag.Agency].[AgencyID], [ag.Agency].[CreationDate], [ag.Agency].[Email], [ag.Agency].[IATACode], [ag.Agency].[Name], [ag.Agency].[PhoneNumber]
+FROM [AgencyUsers] AS [ag]
+INNER JOIN [Agencies] AS [ag.Agency] ON [ag].[AgencyID] = [ag.Agency].[AgencyID]
+WHERE [ag].[Email] = @__email_0" (0723d8ff)
+2019-07-24T14:38:31.3270645-05:00 0HLOGDOEFM8U9:00000002 [INF] Executed action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 24.2426ms. (50a9e262)
+2019-07-24T14:38:31.3328860-05:00 0HLOGDOEFM8U9:00000002 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.AgenciesService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:38:31.3384419-05:00 0HLOGDOEFM8U9:00000002 [INF] Executed action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" in 47.1328ms (afa2e885)
+2019-07-24T14:38:31.3438594-05:00 0HLOGDOEFM8U9:00000002 [INF] Request finished in 65.9399ms 200 application/json; charset=utf-8 (791a596a)
+2019-07-24T14:39:19.7989743-05:00 0HLOGDOEFM8U9:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44397/Agencies/GetAgencyFromUserEmail?email=lugonzalezr@copaair.com   (ca22a1cb)
+2019-07-24T14:39:19.8079351-05:00 0HLOGDOEFM8U9:00000003 [INF] Route matched with "{action = \"GetAgencyFromEmail\", controller = \"Agencies\"}". Executing action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" (a44c0341)
+2019-07-24T14:39:19.8133636-05:00 0HLOGDOEFM8U9:00000003 [INF] Executing action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" with arguments (["lugonzalezr@copaair.com"]) - Validation state: Valid (4e3479ed)
+2019-07-24T14:39:19.8197852-05:00 0HLOGDOEFM8U9:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DbContextAgenciesServices"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:39:19.8273163-05:00 0HLOGDOEFM8U9:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [ag].[UserID], [ag].[AgencyID], [ag].[CreationDate], [ag].[Email], [ag].[Password], [ag.Agency].[AgencyID], [ag.Agency].[CreationDate], [ag.Agency].[Email], [ag.Agency].[IATACode], [ag.Agency].[Name], [ag.Agency].[PhoneNumber]
+FROM [AgencyUsers] AS [ag]
+INNER JOIN [Agencies] AS [ag.Agency] ON [ag].[AgencyID] = [ag.Agency].[AgencyID]
+WHERE [ag].[Email] = @__email_0" (0723d8ff)
+2019-07-24T14:39:19.8324183-05:00 0HLOGDOEFM8U9:00000003 [INF] Executed action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 14.2192ms. (50a9e262)
+2019-07-24T14:39:19.8373972-05:00 0HLOGDOEFM8U9:00000003 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.AgenciesService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:39:19.8426783-05:00 0HLOGDOEFM8U9:00000003 [INF] Executed action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" in 29.6478ms (afa2e885)
+2019-07-24T14:39:19.8481488-05:00 0HLOGDOEFM8U9:00000003 [INF] Request finished in 49.2397ms 200 application/json; charset=utf-8 (791a596a)
+2019-07-24T14:39:19.9114655-05:00 0HLOGDOEFM8U9:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44397/Agencies/GetAgencyFromUserEmail?email=lugonzalezr@copaair.com   (ca22a1cb)
+2019-07-24T14:39:19.9177465-05:00 0HLOGDOEFM8U9:00000004 [INF] Route matched with "{action = \"GetAgencyFromEmail\", controller = \"Agencies\"}". Executing action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" (a44c0341)
+2019-07-24T14:39:19.9240333-05:00 0HLOGDOEFM8U9:00000004 [INF] Executing action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" with arguments (["lugonzalezr@copaair.com"]) - Validation state: Valid (4e3479ed)
+2019-07-24T14:39:19.9294553-05:00 0HLOGDOEFM8U9:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DbContextAgenciesServices"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:39:19.9347559-05:00 0HLOGDOEFM8U9:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__email_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [ag].[UserID], [ag].[AgencyID], [ag].[CreationDate], [ag].[Email], [ag].[Password], [ag.Agency].[AgencyID], [ag.Agency].[CreationDate], [ag.Agency].[Email], [ag.Agency].[IATACode], [ag.Agency].[Name], [ag.Agency].[PhoneNumber]
+FROM [AgencyUsers] AS [ag]
+INNER JOIN [Agencies] AS [ag.Agency] ON [ag].[AgencyID] = [ag.Agency].[AgencyID]
+WHERE [ag].[Email] = @__email_0" (0723d8ff)
+2019-07-24T14:39:19.9398409-05:00 0HLOGDOEFM8U9:00000004 [INF] Executed action method "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 10.9569ms. (50a9e262)
+2019-07-24T14:39:19.9441891-05:00 0HLOGDOEFM8U9:00000004 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.AgenciesService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:39:19.9488592-05:00 0HLOGDOEFM8U9:00000004 [INF] Executed action "CopaAirlines.AgenciesService.API.Controllers.AgenciesController.GetAgencyFromEmail (CopaAirlines.AgenciesService.API)" in 26.5345ms (afa2e885)
+2019-07-24T14:39:19.9531386-05:00 0HLOGDOEFM8U9:00000004 [INF] Request finished in 41.8335ms 200 application/json; charset=utf-8 (791a596a)

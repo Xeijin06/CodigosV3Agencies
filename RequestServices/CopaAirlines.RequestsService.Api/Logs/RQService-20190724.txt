@@ -1,0 +1,102 @@
+2019-07-24T14:37:42.7312395-05:00 0HLOGDPIIQRMR:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:61097/  0 (ca22a1cb)
+2019-07-24T14:37:42.7312393-05:00 0HLOGDPIIQRMQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/   (ca22a1cb)
+2019-07-24T14:37:42.7946293-05:00 0HLOGDPIIQRMR:00000001 [INF] Request finished in 70.6198ms 200  (791a596a)
+2019-07-24T14:37:42.9856380-05:00 0HLOGDPIIQRMQ:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "CopaAirlines.RequestsService.Api.Controllers.HomeController.Index (CopaAirlines.RequestsService.Api)" (a44c0341)
+2019-07-24T14:37:43.0044206-05:00 0HLOGDPIIQRMQ:00000001 [INF] Executing action method "CopaAirlines.RequestsService.Api.Controllers.HomeController.Index (CopaAirlines.RequestsService.Api)" - Validation state: Valid (dad538d7)
+2019-07-24T14:37:43.0138661-05:00 0HLOGDPIIQRMQ:00000001 [INF] Executed action method "CopaAirlines.RequestsService.Api.Controllers.HomeController.Index (CopaAirlines.RequestsService.Api)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5442ms. (50a9e262)
+2019-07-24T14:37:43.0553590-05:00 0HLOGDPIIQRMQ:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2019-07-24T14:37:43.2099264-05:00 0HLOGDPIIQRMQ:00000001 [INF] Executed ViewResult - view "Index" executed in 179.5897ms. (f66409e9)
+2019-07-24T14:37:43.2154054-05:00 0HLOGDPIIQRMQ:00000001 [INF] Executed action "CopaAirlines.RequestsService.Api.Controllers.HomeController.Index (CopaAirlines.RequestsService.Api)" in 224.7026ms (afa2e885)
+2019-07-24T14:37:43.2495062-05:00 0HLOGDPIIQRMQ:00000001 [INF] Request finished in 510.4815ms 200 text/html; charset=utf-8 (791a596a)
+2019-07-24T14:37:43.2549273-05:00 0HLOGDPIIQRMR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44357/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-07-24T14:37:43.2649813-05:00 0HLOGDPIIQRMS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/images/banner1.svg   (ca22a1cb)
+2019-07-24T14:37:43.2682383-05:00 0HLOGDPIIQRMT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-07-24T14:37:43.2794872-05:00 0HLOGDPIIQRMU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/images/banner2.svg   (ca22a1cb)
+2019-07-24T14:37:43.2816869-05:00 0HLOGDPIIQRMQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44357/css/site.css   (ca22a1cb)
+2019-07-24T14:37:43.2923055-05:00 0HLOGDPIIQRMV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-07-24T14:37:43.3202183-05:00 0HLOGDPIIQRMR:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2019-07-24T14:37:43.3216546-05:00 0HLOGDPIIQRMS:00000001 [INF] The file "/images/banner1.svg" was not modified (f1f8d725)
+2019-07-24T14:37:43.3260924-05:00 0HLOGDPIIQRMT:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2019-07-24T14:37:43.3305912-05:00 0HLOGDPIIQRMV:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2019-07-24T14:37:43.3395707-05:00 0HLOGDPIIQRMR:00000002 [INF] Request finished in 83.6577ms 304 text/css (791a596a)
+2019-07-24T14:37:43.3423087-05:00 0HLOGDPIIQRMS:00000001 [INF] Request finished in 77.0098ms 304 image/svg+xml (791a596a)
+2019-07-24T14:37:43.3546690-05:00 0HLOGDPIIQRMV:00000001 [INF] Request finished in 49.8859ms 304 application/javascript (791a596a)
+2019-07-24T14:37:43.3581924-05:00 0HLOGDPIIQRMT:00000001 [INF] Request finished in 73.7346ms 304 application/javascript (791a596a)
+2019-07-24T14:37:43.3658566-05:00 0HLOGDPIIQRMU:00000001 [INF] The file "/images/banner2.svg" was not modified (f1f8d725)
+2019-07-24T14:37:43.3701320-05:00 0HLOGDPIIQRMQ:00000002 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2019-07-24T14:37:43.3870485-05:00 0HLOGDPIIQRMU:00000001 [INF] Request finished in 104.5982ms 304 image/svg+xml (791a596a)
+2019-07-24T14:37:43.3996301-05:00 0HLOGDPIIQRMQ:00000002 [INF] Request finished in 118.3135ms 304 text/css (791a596a)
+2019-07-24T14:37:43.4094573-05:00 0HLOGDPIIQRN0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/images/banner3.svg   (ca22a1cb)
+2019-07-24T14:37:43.4188555-05:00 0HLOGDPIIQRN1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44357/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   (ca22a1cb)
+2019-07-24T14:37:43.4214074-05:00 0HLOGDPIIQRN0:00000001 [INF] The file "/images/banner3.svg" was not modified (f1f8d725)
+2019-07-24T14:37:43.4497311-05:00 0HLOGDPIIQRN1:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2019-07-24T14:37:43.4554774-05:00 0HLOGDPIIQRN0:00000001 [INF] Request finished in 123.6497ms 304 image/svg+xml (791a596a)
+2019-07-24T14:37:43.4654831-05:00 0HLOGDPIIQRN1:00000001 [INF] Request finished in 145.2771ms 304 application/javascript (791a596a)
+2019-07-24T14:37:43.4976160-05:00 0HLOGDPIIQRMT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44357/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-07-24T14:37:43.5120773-05:00 0HLOGDPIIQRMT:00000002 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2019-07-24T14:37:43.5301951-05:00 0HLOGDPIIQRMT:00000002 [INF] Request finished in 29.7436ms 304 font/woff2 (791a596a)
+2019-07-24T14:37:43.5507477-05:00 0HLOGDPIIQRMR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44357/favicon.ico   (ca22a1cb)
+2019-07-24T14:37:43.5793308-05:00 0HLOGDPIIQRMR:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\Lomp-Laptop\Documents\RequestsService\CopaAirlines.RequestsService.Api\wwwroot\favicon.ico"' (27b0a520)
+2019-07-24T14:37:43.5948348-05:00 0HLOGDPIIQRMR:00000003 [INF] Request finished in 38.1955ms 200 image/x-icon (791a596a)
+2019-07-24T14:38:18.4285298-05:00 0HLOGDPIIQRMS:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44357/NameCorrection multipart/form-data; boundary="Upload----07/24/2019 14:38:18" 316 (ca22a1cb)
+2019-07-24T14:38:18.4462657-05:00 0HLOGDPIIQRMS:00000002 [INF] Route matched with "{action = \"PostAsync\", controller = \"NameCorrection\"}". Executing action "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" (a44c0341)
+2019-07-24T14:38:18.5896957-05:00 0HLOGDPIIQRMS:00000002 [INF] Executing action method "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" - Validation state: Valid (dad538d7)
+2019-07-24T14:38:30.8675733-05:00 0HLOGDPIIQRMS:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DBContext_RequestService"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:38:31.1231319-05:00 0HLOGDPIIQRMS:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 20), @p2='?' (Size = 2), @p3='?' (Size = 200), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [NameCorrectionRequests] ([AgencyID], [ContactPhoneNumber], [CountryCode], [Description], [PNR], [RegisteredDate], [ServiceLanguage])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [NameCorrectionRequestID]
+FROM [NameCorrectionRequests]
+WHERE @@ROWCOUNT = 1 AND [NameCorrectionRequestID] = scope_identity();" (0723d8ff)
+2019-07-24T14:38:31.2453658-05:00 0HLOGDPIIQRMS:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [fod].[NameCorrectionRequestID], [fod].[AgencyID], [fod].[ContactPhoneNumber], [fod].[CountryCode], [fod].[Description], [fod].[PNR], [fod].[RegisteredDate], [fod].[ServiceLanguage]
+FROM [NameCorrectionRequests] AS [fod]
+WHERE [fod].[NameCorrectionRequestID] = @__id_0" (0723d8ff)
+2019-07-24T14:38:31.6298982-05:00 0HLOGDPIIQRMS:00000002 [ERR] Failure sending mail. (aca9a3d2)
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Host desconocido
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CopaAirlines.RequestsService.Logic.EmailSender.Send(EmailViewModel emailModel, String pathFile) in C:\Users\Lomp-Laptop\Documents\RequestsService\CopaAirlines.RequestsService.Logic\EmailSender.cs:line 52
+2019-07-24T14:38:31.6383510-05:00 0HLOGDPIIQRMS:00000002 [INF] Executed action method "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 13043.1855ms. (50a9e262)
+2019-07-24T14:38:31.6520005-05:00 0HLOGDPIIQRMS:00000002 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.RequestsService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:38:31.6846324-05:00 0HLOGDPIIQRMS:00000002 [INF] Executed action "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" in 13233.6161ms (afa2e885)
+2019-07-24T14:38:31.6932672-05:00 0HLOGDPIIQRMS:00000002 [INF] Request finished in 13262.4867ms 200 application/json; charset=utf-8 (791a596a)
+2019-07-24T14:39:15.3103272-05:00 0HLOGDPIIQRMS:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44357/NameCorrection multipart/form-data; boundary="Upload----07/24/2019 14:39:15" 91270 (ca22a1cb)
+2019-07-24T14:39:15.3144840-05:00 0HLOGDPIIQRMS:00000003 [INF] Route matched with "{action = \"PostAsync\", controller = \"NameCorrection\"}". Executing action "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" (a44c0341)
+2019-07-24T14:39:15.3224462-05:00 0HLOGDPIIQRMS:00000003 [INF] Executing action method "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" - Validation state: Valid (dad538d7)
+2019-07-24T14:39:19.8599575-05:00 0HLOGDPIIQRMS:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"DBContext_RequestService"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-07-24T14:39:19.8699329-05:00 0HLOGDPIIQRMS:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 20), @p2='?' (Size = 2), @p3='?' (Size = 200), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [NameCorrectionRequests] ([AgencyID], [ContactPhoneNumber], [CountryCode], [Description], [PNR], [RegisteredDate], [ServiceLanguage])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [NameCorrectionRequestID]
+FROM [NameCorrectionRequests]
+WHERE @@ROWCOUNT = 1 AND [NameCorrectionRequestID] = scope_identity();" (0723d8ff)
+2019-07-24T14:39:19.8996459-05:00 0HLOGDPIIQRMS:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [fod].[NameCorrectionRequestID], [fod].[AgencyID], [fod].[ContactPhoneNumber], [fod].[CountryCode], [fod].[Description], [fod].[PNR], [fod].[RegisteredDate], [fod].[ServiceLanguage]
+FROM [NameCorrectionRequests] AS [fod]
+WHERE [fod].[NameCorrectionRequestID] = @__id_0" (0723d8ff)
+2019-07-24T14:39:20.0172932-05:00 0HLOGDPIIQRMS:00000003 [ERR] Failure sending mail. (aca9a3d2)
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: Host desconocido
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CopaAirlines.RequestsService.Logic.EmailSender.Send(EmailViewModel emailModel, String pathFile) in C:\Users\Lomp-Laptop\Documents\RequestsService\CopaAirlines.RequestsService.Logic\EmailSender.cs:line 52
+2019-07-24T14:39:20.0226938-05:00 0HLOGDPIIQRMS:00000003 [INF] Executed action method "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4695.0505ms. (50a9e262)
+2019-07-24T14:39:20.0269781-05:00 0HLOGDPIIQRMS:00000003 [INF] Executing ObjectResult, writing value of type '"CopaAirlines.RequestsService.ViewModel.OperationResult"'. (8a1b66c8)
+2019-07-24T14:39:20.0326362-05:00 0HLOGDPIIQRMS:00000003 [INF] Executed action "CopaAirlines.RequestsService.Api.Controllers.NameCorrectionController.PostAsync (CopaAirlines.RequestsService.Api)" in 4712.7925ms (afa2e885)
+2019-07-24T14:39:20.0386568-05:00 0HLOGDPIIQRMS:00000003 [INF] Request finished in 4727.803ms 200 application/json; charset=utf-8 (791a596a)

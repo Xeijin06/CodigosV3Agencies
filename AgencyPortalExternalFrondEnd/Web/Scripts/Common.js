@@ -28,7 +28,11 @@ APP.common = {
         });
 
         return o;
-    }
+    },
+
+
+    apiServer: $("#api-server").val(),
+    webServer: $("#web-server").val()
 };
 
 $(document).ready(function () {

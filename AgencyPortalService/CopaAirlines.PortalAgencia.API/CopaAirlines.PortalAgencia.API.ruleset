@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="SonarQube - portalagencias-test1-2adadf Sonar way" ToolsVersion="15.0">
-  <Include Path="..\.sonarlint\portalagencias-test1-2adadfcsharp.ruleset" Action="Default" />
-  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
-    <Rule Id="CA1000" Action="Warning" />
-    <Rule Id="CA1001" Action="Warning" />
-  </Rules>
-</RuleSet>

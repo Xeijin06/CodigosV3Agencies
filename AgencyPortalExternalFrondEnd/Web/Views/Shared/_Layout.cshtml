@@ -38,6 +38,8 @@
     <div class="hidden loading" id="loadingContent">
     </div>
 
+    <input type="hidden" id="api-server" value="@System.Configuration.ConfigurationManager.AppSettings["RequestServicesURL"]" />
+    <input type="hidden" id="web-server" value="//@HttpContext.Current.Request.Url.Authority@HttpRuntime.AppDomainAppVirtualPath/" />
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")

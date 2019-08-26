@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>3ab97e7a-5f31-4967-98b8-018ffb8ccb6a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.Common\CopaAirlines.AgenciesService.Common.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.DA\CopaAirlines.AgenciesService.DA.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.Interface\CopaAirlines.AgenciesService.Interface.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.Logic\CopaAirlines.AgenciesService.Logic.csproj" />
+    <ProjectReference Include="..\CopaAirlines.AgenciesService.ViewModel\CopaAirlines.AgenciesService.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

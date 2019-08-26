@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.Api", "CopaAirlines.RequestsService.Api\CopaAirlines.RequestsService.Api.csproj", "{26D633D0-168C-47E6-A385-63A9661079DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.Interface", "CopaAirlines.RequestsService.Interface\CopaAirlines.RequestsService.Interface.csproj", "{55B9A693-E81B-4608-85D1-7CAE6663D48F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.Logic", "CopaAirlines.RequestsService.Logic\CopaAirlines.RequestsService.Logic.csproj", "{600098B3-8CC0-43E6-9F61-FEEBDAE9130B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.DA", "CopaAirlines.RequestsService.DA\CopaAirlines.RequestsService.DA.csproj", "{39089743-9E0A-41CD-AF83-9C55F4F0CA94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.ViewModel", "CopaAirlines.RequestsService.ViewModel\CopaAirlines.RequestsService.ViewModel.csproj", "{3BA4E6FC-1A0C-4FF5-A539-D0E313601329}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopaAirlines.RequestsService.Common", "CopaAirlines.RequestsService.Common\CopaAirlines.RequestsService.Common.csproj", "{3D349F27-EF7A-4E6C-A3EA-799DC17722AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopaAirlines.RequestsService.ServiceManager", "CopaAirlines.RequestsService.ServiceManager\CopaAirlines.RequestsService.ServiceManager.csproj", "{6B0B7BAE-6833-4F67-B817-03733F9117ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D633D0-168C-47E6-A385-63A9661079DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D633D0-168C-47E6-A385-63A9661079DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D633D0-168C-47E6-A385-63A9661079DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D633D0-168C-47E6-A385-63A9661079DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B9A693-E81B-4608-85D1-7CAE6663D48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B9A693-E81B-4608-85D1-7CAE6663D48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B9A693-E81B-4608-85D1-7CAE6663D48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B9A693-E81B-4608-85D1-7CAE6663D48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600098B3-8CC0-43E6-9F61-FEEBDAE9130B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600098B3-8CC0-43E6-9F61-FEEBDAE9130B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600098B3-8CC0-43E6-9F61-FEEBDAE9130B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600098B3-8CC0-43E6-9F61-FEEBDAE9130B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39089743-9E0A-41CD-AF83-9C55F4F0CA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39089743-9E0A-41CD-AF83-9C55F4F0CA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39089743-9E0A-41CD-AF83-9C55F4F0CA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39089743-9E0A-41CD-AF83-9C55F4F0CA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA4E6FC-1A0C-4FF5-A539-D0E313601329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA4E6FC-1A0C-4FF5-A539-D0E313601329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA4E6FC-1A0C-4FF5-A539-D0E313601329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA4E6FC-1A0C-4FF5-A539-D0E313601329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D349F27-EF7A-4E6C-A3EA-799DC17722AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D349F27-EF7A-4E6C-A3EA-799DC17722AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D349F27-EF7A-4E6C-A3EA-799DC17722AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D349F27-EF7A-4E6C-A3EA-799DC17722AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0B7BAE-6833-4F67-B817-03733F9117ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0B7BAE-6833-4F67-B817-03733F9117ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0B7BAE-6833-4F67-B817-03733F9117ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0B7BAE-6833-4F67-B817-03733F9117ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {171C2D45-004C-44A0-BBF5-6D92DF55CBE5}
+	EndGlobalSection
+EndGlobal
